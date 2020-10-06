@@ -32,7 +32,7 @@ export class ConsultaComponent implements OnInit {
     for (i = 0; i < personas.length; i++){
         apoyo = this.apoyoService.buscarApoyo(personas[i]);
         cadenaTodos +=
-        '<tr>' +
+        '<tr scope="row">' +
             '<td >' + personas[i].identificacion + '</td>' +
             '<td>' + personas[i].nombres+ '</td>' +
             '<td>' + personas[i].apellidos+ '</td>' +
