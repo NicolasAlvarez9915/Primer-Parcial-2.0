@@ -34,6 +34,7 @@ export class ApoyoService {
     Saldo += apoyo.valor;
     localStorage.setItem('Saldo', JSON.stringify(Saldo));
   }
+  
   getSaldo(){
     let Saldo: number;
     Saldo = JSON.parse(localStorage.getItem('Saldo'));
